@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;}
+        div{
+            border: 2px solid red;}
+        .root{
+            width: 50%;
+
+        }
+        .parent{
+            width: 50%;
+            border-color: blue;
+        }
+        .child{
+            border-color: greenyellow;
+            width: 50%;
+        }
+        /* px단위 사용시 자식의 속성값을 건들면 부모와 따로놀게 된다. 그래서 한쪽을 바꾸면 전부 바꿔야해서 불편함
+         %는 부모대비 비율이다. 모바일등 반응형 웹사이트의 호환성을 생각해서 절대값인 px단위가 아닌 상대단위들을 쓰는게 좋다. */
+    </style>
+</head>
+<body>
+
+    <div class="root">ROOT
+        <div class="parent">PARENT
+            <div class="child">CHILD-1</div>
+            <div class="child">CHILD-2</div>
+        </div>
+    </div>
+
+</body>
+</html>
