@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+
+    <style>
+
+        * {
+            /*전체 선택자: 모든 태그에게 스타일을 적용
+            box sizing같은건 중요하지만 까먹기 쉬우므로 이렇게 전제 선택자에 적용을 하는 경우가 많다. */
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            background: orange;
+            margin: 100px;
+            /*패딩을 사용하면 박스의 크기가 패딩만큼 커짐*/
+            padding-top: 40px;
+            padding-left: 30px;
+
+            /* 패딩 또는 보더 속성으로 인해 박스가 커지는걸 방지 */
+
+            box-sizing: border-box;
+        }
+
+        /*width 디폴트 100%*/
+        .box {
+            height: 50%;
+            background: tomato;
+            font-size: 2rem;
+            /*padding: 20px;*/
+
+        }
+
+        /*p {*/
+        /*    border: 3px solid black;*/
+        /*    width: 50%;*/
+        /*    margin: 20px auto;*/
+        /*    text-align: justify;*/
+        /*    font-size: 1.5em;*/
+        /*    padding: 20px;*/
+        /*    line-height: 1.5em;*/
+
+        /*}*/
+
+        .card {
+            width: 250px;
+            height: 350px;
+            border: 2px solid gray;
+            margin: 70px auto;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .card .image {
+            width: 100%;
+            height: 250px;
+            border: 2px solid lightgray;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card .text {
+            /*border: 4px solid red;*/
+            text-align: center;
+        }
+        .card .image img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- card 형의 기본적인 형태 레이어들 프리컴프하는 느낌이라고 생각하면 됨-->
+    <div class="card">
+        <div class="image">
+            <img src="../123.png" alt="">
+        </div>
+        <p class="text">
+            blah~~ blah~~
+        </p>
+    </div>
+
+    <!--  .container>.box{안녕안녕}-->
+    <div class="container">
+        <div class="box">안녕안녕</div>
+    </div>
+    <p>sdfdsasdfasfasfdsafdsafasdfsadfsadfsdaf</p>
+</body>
+</html>
