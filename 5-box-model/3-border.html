@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        /*이거로 크기 안변하게 보정*/
+        *{box-sizing:border-box;}
+        .box{
+            width: 150px;
+            height: 150px;
+            background: gray;
+            margin: 10px auto 0;
+        }
+        .box.box1 {
+            background: tomato;
+            /*선의 굵기 굵기만큼 크기가 추가된다.*/
+            border-width: 5px;
+            /*선의 모양*/
+            border-style: solid;
+            /*선의 색상*/
+            border-color: orange;
+
+        }
+.box.box2 {
+    /*단축속성 순서상관없이 띄어쓰기로만 속성적으면 됨*/
+    border: solid 4px #ffff01;
+
+}
+.box.box3 {
+    background: greenyellow;
+    border-top: 4px solid green;
+    border-bottom:4px dotted violet;
+    /*50퍼센트는 원*/
+    border-radius:50%;
+    border-bottom-color: dodgerblue;
+}
+.banner {
+    width: 80%;
+    height: 150px;
+    background: pink;
+    border: 4px solid salmon;
+    border-left: none;
+    /*왼쪽 위부터 시계방향*/
+    border-radius:0 20px 20px 0;
+    margin: 50px 0;
+
+
+}
+body{
+    margin:0;}
+
+    </style>
+
+</head>
+<body>
+    <div class="banner">
+        <div></div>
+    </div>
+
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+
+
+
+</body>
+</html>
