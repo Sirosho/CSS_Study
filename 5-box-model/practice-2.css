@@ -1,0 +1,32 @@
+@import url('https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css');
+
+
+  .main{
+
+      width: 600px;
+      margin: 70px auto;
+}
+section .question-box{
+    background: #999999;
+    /*padding: 2em;*/
+    width: 600px;
+
+}
+section .question{
+    padding: 1em 1em;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.question a{
+    color: #ffffff;
+    text-shadow:  2px 2px 2px #000000;
+    text-decoration: none;
+}
+
+.question a:hover{
+    color: salmon;
+    background: rgba(173,216,230,0.5);
+    transition: background-color 0.6s ease-in;
+    transition: color 0.3s ease-in;
+}

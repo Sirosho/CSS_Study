@@ -1,0 +1,17 @@
+
+@import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css");
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: '궁서','궁서체','gungseo',cursive;
+    font-size: 18px;
+    color: #999;
+    line-height: 1.4;
+}
