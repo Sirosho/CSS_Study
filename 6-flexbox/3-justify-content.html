@@ -18,9 +18,11 @@
       padding: 20px 0;
       display: flex;
       flex-wrap:  wrap;
+      flex-direction: row;
       /*공간이 남아야 알아서 분배해줌
-      주축정렬 기능*/
-      justify-content: space-evenly;
+      주축정렬 기능 flex-direction의 세팅에 따라 주축은 x축 혹은 y축으로 달라진다*/
+      justify-content: flex-start;
+        height: 800px;
     }
 
     .box{

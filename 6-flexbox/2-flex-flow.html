@@ -20,15 +20,18 @@
       flex-direction: row;
       /* 디폴트는 nowrap으로 되어 있음 그렇게 되면 사이즈를 조정해서라도 일자로 놓으려고 함
       wrap은 공간이 없으면 아래로 내려가는 옵션 */
-      flex-wrap:  wrap;
-
+        /*wrap-reverse도 있음*/
+        flex-wrap:  wrap;
+        justify-content: ;
       /*단축속성으로 이렇게 사용가능*/
       /*flex-flow: row wrap;*/
     }
+
     /*반응형 웹디자인에서 필요한 옵션 width가 500px을 넘어가면 디렉션을 바꾼다. 라는 뜻*/
     @media(max-width:500px){
       .wrapper{
         flex-direction: column;
+
       }
     }
     .box{

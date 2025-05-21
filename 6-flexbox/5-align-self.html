@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+
+    <style>
+
+        .container{
+            border: 2px solid red;
+            padding: 20px 0;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            fl
+        }
+        .item{
+            width: 300px;
+            height: 100px;
+            border: 2px solid orange;
+            border-radius: 15px ;
+            font-size: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .item:first-of-type{
+            align-self: flex-end;
+        }
+.item:nth-child(3){
+    align-self: ;
+}
+.item:last-child{
+    align-self: stretch;
+    height: auto;
+}
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+</body>
+</html>
