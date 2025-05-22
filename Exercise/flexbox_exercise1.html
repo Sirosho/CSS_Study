@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+
+    <style>
+        body{}
+
+
+        button:active {
+            transform: scale(0.95);
+            transition: ease 0.1s;
+
+        }
+
+        .button-container{
+            display: flex;
+            gap:10%;
+            justify-content: center;
+            margin-top: 50px;
+            flex-wrap: nowrap;
+        }
+
+        .button-container button{
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 15px;
+            width: 100px;
+        }
+        button:nth-child(1){
+            flex-basis: 100px;
+        }
+        button:nth-child(2){
+            flex-basis: 100px;
+        }
+        button:nth-child(3){
+            flex-basis: 100px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div class="button-container">
+        <button>저장</button>
+        <button>수정</button>
+        <button>삭제</button>
+    </div>
+
+    <section class="main-section">
+        <div class="content">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+            <div>F</div>
+        </div>
+    </section>
+
+
+</body>
+</html>
