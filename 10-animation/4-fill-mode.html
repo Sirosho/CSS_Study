@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+  <style>
+
+    .container {
+      height: 100vh;
+      background: url("https://kokokaki.github.io/img/about_1.jpg")
+    no-repeat center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+    .container p {
+      width: 60%;
+      font-size: 3em;
+      color: white;
+      font-weight: 700;
+      line-height:  1.2;
+      text-shadow: 1px 1px 3px black;
+      animation: fade-in-text 5s;
+      animation-timing-function: ease;
+      /*animation은 끝나면 최초상황으로 돌아가려고 함 이모드를 써서 해결가능
+        단축속성 사용할때 아무대나 쓰면 됨*/
+      animation-fill-mode: both ;
+    }
+    @keyframes fade-in-text{
+      /*2개면 from to 이렇게 두개로 해서 사용도 가능*/
+      0%{opacity:0;
+          transform: translate(0, -500px); }
+      10%{
+        transform: translate(0, 20px);
+      }
+      20%{
+        transform: translate(0, -20px);
+      }
+      30%{
+        transform: translate(0, 10px);
+      }
+      40%{
+        transform: translate(0, -10px);
+      }
+      50%{
+        transform: translate(0, 5px);
+      }
+      10%{
+        transform: translate(0, -5px);
+      }
+      100%{opacity:1;
+        transform: translate(0, 0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <p>국회의원과 정부는 법률안을 제출할 수 있다. 국민의 자유와 권리는 헌법에 열거되지 아니한 이유로 경시되지 아니한다. 환경권의 내용과 행사에 관하여는 법률로 정한다.</p>
+  </div>
+
+</body>
+</html>

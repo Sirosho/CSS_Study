@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+
+  <style>
+
+    .box{
+      width: 100px;
+      height: 100px;
+      background: red;
+      margin: 50px;
+      /*트랜지션은 원본에 걸어줘야 좋다.*/
+      /*transition-property의 디폴트는 all 이다.*/
+      transition-property: background, width;
+      transition-duration: 3220ms,3220ms;
+      transition-delay: 100ms;
+      transition-timing-function: cubic-bezier(0.4, 0, -0.2, 1);
+    }
+
+    .box:hover{
+      width: 300px;
+      background: greenyellow;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="box"></div>
+
+</body>
+</html>

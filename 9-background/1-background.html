@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+
+  <style>
+    body{
+      height: 3000px;}
+    .box{
+      width: 950px;
+      height: 650px;
+      border: 4px dashed orange;
+      margin: 800px auto;
+      /*855 x 485*/
+      background-image: url("https://kokokaki.github.io/img/blog_1.png");
+      /*이미지 사이즈 조절*/
+      /*contain은 이미지를 훼손하지 않는 선에서 맞추기 cover는 최소한으로 훼손하면서 맞춰줌*/
+      background-size: cover;
+      /*이미지 반복설정 디폴트가 repeat*/
+      background-repeat: no-repeat;
+      /* 이미지 위치 설정 x축 y축 포지션 속성처럼 사용가능*/
+      background-position: center;
+      /*이미지 고정 속성 스타벅스 사이트 배경처럼 */
+      background-attachment: fixed;
+
+      /*단축속성 이렇게 다 적으면 되는데 수치 적어서 하는 것들은 안쓰는걸 추천 */
+      background: no-repeat fixed url("https://kokokaki.github.io/img/blog_1.png");
+
+    /*  백그라운드 이미지 속성은 오버플로우 히든이 자동적용된다.*/
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <div class="box">
+<!--    <img src="https://kokokaki.github.io/img/blog_1.png" alt="">-->
+  </div>
+
+</body>
+</html>
